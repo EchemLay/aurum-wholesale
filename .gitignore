@@ -54,5 +54,3 @@ coverage/
 # Ignore documentation files
 documentation/.DS_Store
 
-# Ignore lock files and config generated files
-jsconfig.json
