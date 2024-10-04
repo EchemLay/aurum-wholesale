@@ -1,4 +1,4 @@
-import Layout from "@/components/layout/Layout"
+import Layout from "@/components/layout/Layout.js"
 import Banner2 from "@/components/sections/Banner2"
 import Features2 from "@/components/sections/Features2"
 import About2 from "@/components/sections/About2"
