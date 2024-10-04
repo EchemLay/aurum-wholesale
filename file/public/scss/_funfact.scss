@@ -1,0 +1,310 @@
+/*** 
+
+====================================================================
+    Fun Fact Section
+====================================================================
+
+***/
+
+.funfacts-section{
+    position: relative;
+    padding: 120px 0 90px;
+    z-index: 3;
+}
+
+.counter-block{
+    margin-bottom: 30px;
+    .inner-box {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding-bottom: 35px;
+        border-bottom: 1px solid rgb(255, 255, 255, .20);
+        @include transition(all 300ms ease);
+        @include media-breakpoint-down(lg){
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-top: 15px solid var(--theme-color1);
+            @include transition(all 300ms ease);
+        }
+        &:hover {
+            .icon {
+                transform: scaleX(-1);
+                color: var(--theme-color-light);
+            }
+        }
+    }
+    .content-box {
+        position: relative;
+    }
+    .icon {
+        position: relative;
+        display: inline-block;
+        font-size: 62px;
+        line-height: 1em;
+        margin-right: 50px;
+        color: var(--theme-color1);
+        @include transition(all 300ms ease);
+        @include media-breakpoint-down(lg){
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+    }
+    .count-box {
+        position: relative;
+        font-size: 60px;
+        line-height: 1em;
+        font-weight: 600;
+        @include title-font;
+        color: var(--theme-color-light);
+        .count-text {
+            position: relative;
+            font-size: 60px;
+            line-height: 1em;
+            font-weight: 600;
+            @include title-font;
+            color: var(--theme-color-light);
+        }
+    }
+    .counter-title {
+        position: relative;
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 400;
+        color: var(--theme-color-light);
+        margin-bottom: 0;
+        @include text-font;
+    }
+}
+
+/*** 
+
+====================================================================
+    Fun Fact Section Two
+====================================================================
+
+***/
+
+.funfacts-section-two {
+    position: relative;
+    padding: 120px 0 90px;
+    z-index: 3;
+    &:before {
+        @include overlay;
+        background-color: #04223e;
+        opacity: .94;
+        content: '';
+    }
+    .fact-counter {
+        margin-top: 68px;
+        @include media-breakpoint-down(lg){
+            margin-top: 0;
+            padding-top: 50px;
+        }
+    }
+}
+
+.counter-block-two {
+    margin-bottom: 30px;
+    .inner-box {
+        position: relative;
+        text-align: center;
+        &:hover {
+            .icon {
+                color: var(--theme-color-light);
+                transform: rotate(360deg);
+                &::after {
+                    transform: scale(1);
+                }
+            }
+        }
+        .icon {
+            position: relative;
+            width: 129px;
+            height: 129px;
+            @include flex-center;
+            margin: -68px auto 35px;
+            font-size: 50px;
+            color: #d1af4b;
+            border-radius: 50%;
+            border: 10px solid var(--theme-color1);
+            background-color: var(--theme-color-light);
+            @include transition(all 300ms ease);
+            @include media-breakpoint-down(lg){
+                margin-top: 0;
+            }
+            &:before {
+                position: relative;
+                z-index: 1;
+            }
+            &:after {
+                @include overlay;
+                border-radius: 50%;
+                transform: scale(0);
+                background-color: var(--theme-color1);
+                @include transition(all 300ms ease);
+                content: '';
+            }
+        }
+        .count-box {
+            position: relative;
+            color: var(--theme-color-light);
+            font-size: 60px;
+            font-weight: 400;
+            line-height: 1em;
+            margin-bottom: 28px;
+            .count-text {
+                position: relative;
+                color: var(--theme-color-light);
+                font-size: 60px;
+                font-weight: 600;
+                line-height: 1em;
+                margin-bottom: 28px;
+            }
+        }
+        .counter-title {
+            position: relative;
+            display: inline-block;
+            color: var(--theme-color-light);
+            font-weight: 400;
+            padding: 4px 15px;
+            border: 1px solid rgb(255, 255, 255, .20);
+            @include media-breakpoint-down(xl){
+                padding: 4px;
+            }
+        }
+    }
+}
+
+/*** 
+
+====================================================================
+    Fun Fact Section Three
+====================================================================
+
+***/
+
+.funfacts-section-three{
+    position: relative;
+    padding: 120px 0 90px;
+    margin-bottom: -100px;
+    z-index: 3;
+    .fact-counter {
+        position: relative;
+        padding: 50px 90px 0;
+        @include media-breakpoint-down(md){
+            padding: 50px 0 0;
+        }
+        .bg-image {
+            position: absolute;
+        }
+    }
+}
+
+.counter-block-three{
+    margin-bottom: 50px;
+    &:last-child {
+      .inner-box {
+        border: none;
+        padding-bottom: 0;
+      }  
+    }
+    .inner-box {
+        position: relative;
+        display: flex;
+        align-items: center;
+        @include transition(all 300ms ease);
+        @include media-breakpoint-down(lg){
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+        @include media-breakpoint-down(md){
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            padding-bottom: 40px;
+        }
+        &:before {
+            background-color: var(--theme-color1);
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 22px;
+            height: 84px;
+            z-index: 0;
+            @include transition(all 300ms ease);
+            @include media-breakpoint-down(md){
+                display: none;
+            }
+        }
+        &:hover {
+            .icon {
+                transform: scaleX(-1);
+                color: var(--theme-color-light);
+            }
+        }
+    }
+    .content-box {
+        position: relative;
+    }
+    .icon {
+        position: relative;
+        display: inline-block;
+        font-size: 54px;
+        line-height: 1em;
+        margin-right: 50px;
+        color: var(--theme-color-light);
+        @include transition(all 300ms ease);
+        @include media-breakpoint-down(xl){
+            margin-right: 20px;
+        }
+        @include media-breakpoint-down(lg){
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+    }
+    .count-box {
+        position: relative;
+        font-size: 60px;
+        line-height: 1em;
+        font-weight: 600;
+        @include title-font;
+        color: var(--theme-color-light);
+        @include media-breakpoint-down(lg){
+            font-size: 42px;
+        }
+        .count-text {
+            position: relative;
+            font-size: 60px;
+            line-height: 1em;
+            font-weight: 600;
+            @include title-font;
+            color: var(--theme-color-light);
+            @include media-breakpoint-down(lg){
+                font-size: 42px;
+            }
+        }
+    }
+    .counter-title {
+        position: relative;
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 400;
+        color: var(--theme-color-light);
+        margin-bottom: 0;
+        @include text-font;
+        @include media-breakpoint-down(lg){
+            font-size: 14px;
+        }
+    }
+}

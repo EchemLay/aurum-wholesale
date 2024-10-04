@@ -1,0 +1,243 @@
+/*** 
+
+====================================================================
+    Contact Section
+====================================================================
+
+***/
+
+.contact-section {
+	position: relative;
+	padding: 120px 0;
+    z-index: 3;
+    @include media-breakpoint-down(lg){
+        background-color: var(--theme-color2);
+    }
+    .icon-plane-7 {
+        position: absolute;
+        bottom: 145px;
+        left: 15px;
+        @include media-breakpoint-down(lg){
+            display: none;
+        }
+    }
+    .outer-box {
+        position: relative;
+        margin-bottom: 80px;
+        @include media-breakpoint-down(lg){
+            padding: 120px 0 150px;
+            margin-bottom: 0;
+        }
+        .bg {
+            top: 80px;
+            @include media-breakpoint-down(lg){
+                display: none;
+            }
+        }
+    }
+
+    .form-column {
+        .inner-column {
+            padding-left: 30px;
+            padding-right: 60px;
+            @include media-breakpoint-down(xl){
+                padding: 0;
+            }
+            @include media-breakpoint-down(lg){
+                margin-bottom: 50px;
+            }
+        }
+        .contact-form {
+            position: relative;
+            border: 9px solid var(--theme-color-light);
+            .icon-lines-2 {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .custom-checkboxes {
+                position: relative;
+                display: flex;
+                align-items: center;
+                @include media-breakpoint-down(sm){
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+                input {
+                    height: 0;
+                }
+            }
+        }
+    }
+
+    .video-column {
+        .inner-column {
+            position: relative;
+            @include media-breakpoint-down(lg){
+                text-align: center;
+            }
+            .icon-text {
+                position: absolute;
+                top: 380px;
+                right: 150px;
+                z-index: 1;
+                @include media-breakpoint-down(xl){
+                    right: 60px;
+                }
+                @include media-breakpoint-down(lg){
+                    display: none;
+                }
+            }
+            .video-box {
+                position: absolute;
+                top: 380px;
+                right: 410px;
+                @include media-breakpoint-down(xl){
+                    right: 320px;
+                }
+                @include media-breakpoint-down(lg){
+                    position: relative;
+                    right: 0;
+                    top: 0;
+                    display: inline-block;
+                    margin: 0 auto;
+                    margin-left: -98px;
+                }
+            }
+            .play-now {
+                position: absolute;
+                top: 0;
+                left: 0;
+                .icon {
+                    @include transition(all 300ms ease);
+                    &:hover {
+                        background-color: var(--theme-color2);
+                        color: var(--theme-color-light);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*** 
+
+====================================================================
+    Contact Section
+====================================================================
+
+***/
+
+.contact-section-two {
+    position: relative;
+    &.pull-up {
+        margin-top: -200px;
+    }
+}
+.contact-block-two {
+    background-color: var(--theme-color-light);
+    box-shadow: 0px 5px 83px 0px rgba(40, 40, 40, 0.11);
+    position: relative;
+    .contact-form {
+        background-color: transparent;
+        padding: 41px 26px 46px 50px;
+        @include media-breakpoint-down(lg){
+            padding: 40px 30px;
+        }
+        .select2-container--default .select2-selection--single,
+        input:not([type="submit"]),
+        textarea,
+        select {
+            border: 2px solid #eaeaea;
+            background-color: var(--theme-color-light);
+        }
+        .btn-style-one {
+            &.dark-bg{
+                color: var(--theme-color-light);
+                background-color: var(--theme-color-dark);
+                &::before{background-color: var(--theme-color1);}
+                &:hover{color: var(--theme-color-light);}
+            }
+        }
+    }
+    .custom-checkboxes {
+        align-items: center;
+        display: flex;
+        @include media-breakpoint-down(sm){
+            display: block;
+        }
+        .checkbox{
+            margin-right: 10px;
+        }
+        input {
+            height: 0;
+        }
+        .custom-checkbox {
+            color: var(--text-color);
+        }
+        .checkmark {
+            background-color: transparent;
+            border: 2px solid #eaeaea;
+            border-radius: 3px;
+            &:after {
+                left: 3px;
+                top: 3px;
+                width: 8px;
+                height: 8px;
+                background-color: var(--theme-color3);
+                content: "";
+            }
+        }
+    }
+    .form-group-title {
+        font-family: var(--title-font);
+        color: var(--headings-color);
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+}
+
+.contact-tabs {
+    .tab-buttons {
+        align-items: center;
+        display: flex;
+        .tab-btn {
+            background-color: var(--theme-color-dark);
+            color: var(--theme-color-light);
+            cursor: pointer;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 40px 50px;
+            text-align: center;
+            width: 50%;
+            @include media-breakpoint-down(md){
+                padding: 40px 20px;
+            }
+            @include media-breakpoint-down(sm){
+                font-size: 14px;
+                padding: 20px 10px;
+            }
+            .icon-box {
+                font-size: 50px;
+                margin-right: 20px;
+                position: relative;
+                top: 3px;
+                @include media-breakpoint-down(sm){
+                    display: none;
+                }
+            }
+            &.active-btn {
+                background-color: var(--theme-color1);
+                color: var(--theme-color-light);
+            }
+        }
+    }
+    .tabs-content {
+        .tab {
+            &.active-tab {}
+        }
+    }
+}

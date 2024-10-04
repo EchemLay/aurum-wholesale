@@ -1,0 +1,151 @@
+/*** 
+
+====================================================================
+    Video Section
+====================================================================
+
+***/
+
+.video-section {
+    position: relative;
+    padding: 120px 0;
+    @include media-breakpoint-down(lg){
+        padding-bottom: 160px;
+    }
+    .bg {
+        &:before {
+            @include overlay;
+            opacity: .9;
+            background-color: var(--theme-color2);
+            content: '';
+        }
+    }
+    &.pull-up {
+        .bg {
+            bottom: 0;
+            height: auto;
+            top: -230px;
+        }
+    }
+    .icon-plane-3 {
+        position: absolute;
+        bottom: 20px;
+        right: -105px;
+    }
+    .content-column {
+        margin-bottom: 50px;
+        .inner-column {
+            position: relative;
+            .features-box {
+                position: relative;
+                padding-top: 27px;
+                margin-bottom: 40px;
+                border-top: 1px solid rgb(255, 255, 255, .2);
+                @include media-breakpoint-down(sm){
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .video-column {
+        .inner-column {
+            position: relative;
+            .shape {
+                position: absolute;
+                top: 0;
+                right: 140px;
+                width: 195px;
+                height: 416px;
+                background-color: var(--theme-color1);
+                transform: skewX(-30deg);
+                @include media-breakpoint-down(lg){display: none;}
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 23px;
+                    right: 100px;
+                    width: 155px;
+                    height: 331px;
+                    border: 1px solid rgb(255, 109, 46, .30);
+                    z-index: 3;
+                    @include media-breakpoint-down(lg){display: none;}
+                }
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 135px;
+                    right: -110px;
+                    width: 155px;
+                    height: 331px;
+                    background-color: rgb(255, 255, 255, .1);
+                    @include media-breakpoint-down(lg){display: none;}
+                }
+            }
+            .icon-text {
+                position: absolute;
+                top: 175px;
+                left: 72%;
+                z-index: 1;
+            }
+            .video-box {
+                position: absolute;
+                top: 170px;
+                left: 53%;
+                @include media-breakpoint-down(lg){
+                    top: 0;
+                    left: 45%;
+                }
+                @include media-breakpoint-down(sm){
+                    left: 30%;
+                }
+            }
+            .play-now {
+                position: absolute;
+                top: 0;
+                left: 0;
+                .icon {
+                    @include transition(all 300ms ease);
+                    &:hover {
+                        background-color: var(--theme-color2);
+                        color: var(--theme-color-light);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.feature-block-two {
+    position: relative;
+    @include media-breakpoint-down(sm){
+        margin-bottom: 30px;
+    }
+    .inner-box{
+        position: relative;
+        display: flex;
+        align-items: center;
+        @include transition(all 300ms ease);
+        &:hover {
+            .icon {
+                transform: scaleX(-1);
+            }
+        }
+        .icon {
+            position: relative;
+            display: block;
+            color: var(--theme-color1);
+            font-size: 54px;
+            line-height: 1em;
+            margin-right: 25px;
+            @include transition(all 300ms ease);
+        }
+        .title {
+            position: relative;
+            color: var(--theme-color-light);
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 0;
+        }
+    }
+}

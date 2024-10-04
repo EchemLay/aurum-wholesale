@@ -1,0 +1,478 @@
+
+/*** 
+
+====================================================================
+  Anim Icons
+====================================================================
+
+***/
+
+.reveal {
+    position: relative;
+    display: inline-flex;
+    visibility: visible;
+    overflow: hidden;
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transform-origin: left;
+    }   
+}
+
+.anim-icons {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+[text-split] {
+    opacity: 0;
+}
+
+.word {
+    overflow: hidden;
+    padding-bottom: 0.1em;
+    margin-bottom: -0.35em;
+    transform-origin: bottom;
+}
+
+.anim-icons.full-width {
+    max-width: 100%;
+}
+
+.anim-icons .icon {
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.icon-global {
+    width: 470px;
+    height: 454px;
+    background-image: url(../images/icons/icon-global.png);
+}
+
+.icon-global-2 {
+    width: 484px;
+    height: 467px;
+    background-image: url(../images/icons/icon-global-2.png);
+}
+
+.icon-city {
+    width: 947px;
+    height: 343px;
+    background-image: url(../images/icons/icon-city.png);
+}
+
+.icon-circle {
+    width: 228px;
+    height: 154px;
+    background-image: url(../images/icons/icon-circle.png);
+}
+
+.shape-2 {
+    width: 686px;
+    height: 527px;
+    background-image: url(../images/icons/shape-2.png);
+}
+
+.icon-angle {
+    width: 60px;
+    height: 38px;
+    background-image: url(../images/icons/icon-angle.png);
+}
+
+.icon-dots {
+    width: 631px;
+    height: 523px;
+    background-image: url(../images/icons/icon-dots.png);
+}
+
+.icon-dots-2 {
+    width: 781px;
+    height: 667px;
+    background-image: url(../images/icons/icon-dots-2.png);
+}
+
+.icon-dots-3 {
+    width: 117px;
+    height: 116px;
+    background-image: url(../images/icons/icon-dots-3.png);
+}
+
+.icon-dots-4 {
+    width: 613px;
+    height: 358px;
+    background-image: url(../images/icons/icon-dots-4.png);
+}
+
+.icon-dots-5 {
+    width: 350px;
+    height: 561px;
+    background-image: url(../images/icons/icon-dots-5.png);
+}
+
+.icon-plane-6 {
+    width: 453px;
+    height: 420px;
+    background-image: url(../images/icons/icon-plane-6.png);
+}
+
+.icon-plane-7 {
+    width: 301px;
+    height: 337px;
+    background-image: url(../images/icons/icon-plane-7.png);
+}
+
+.icon-plane-8 {
+    width: 94px;
+    height: 559px;
+    background-image: url(../images/icons/icon-plane-8.png);
+}
+
+.icon-plane-9 {
+    width: 106px;
+    height: 639px;
+    background-image: url(../images/icons/icon-plane-9.png);
+}
+
+.icon-plane-10 {
+    width: 219px;
+    height: 116px;
+    position: relative;
+    left: 600px;
+    background-image: url(../images/icons/icon-plane-10.png);
+}
+
+.icon-container {
+    width: 451px;
+    height: 247px;
+    background-image: url(../images/icons/icon-container.png);
+}
+
+.icon-container-2 {
+    width: 537px;
+    height: 206px;
+    background-image: url(../images/icons/icon-container-2.png);
+}
+
+.icon-container-3 {
+    width: 250px;
+    height: 265px;
+    background-image: url(../images/icons/icon-container-3.png);
+}
+
+.icon-plane {
+    width: 298px;
+    height: 488px;
+    background-image: url(../images/icons/icon-plane.png);
+}
+
+.icon-plane-2 {
+    width: 461px;
+    height: 211px;
+    background-image: url(../images/icons/icon-plane-2.png);
+}
+
+.icon-plane-3 {
+    width: 461px;
+    height: 211px;
+    background-image: url(../images/icons/icon-plane-3.png);
+}
+
+.icon-plane-4 {
+    width: 137px;
+    height: 805px;
+    background-image: url(../images/icons/icon-plane-4.png);
+}
+
+.icon-plane-5 {
+    width: 372px;
+    height: 428px;
+    background-image: url(../images/icons/icon-plane-5.png);
+}
+
+.icon-plane-6 {
+    width: 453px;
+    height: 420px;
+    background-image: url(../images/icons/icon-plane-6.png);
+}
+
+.icon-plane-7 {
+    width: 301px;
+    height: 337px;
+    background-image: url(../images/icons/icon-plane-7.png);
+}
+
+.icon-plane-8 {
+    width: 94px;
+    height: 559px;
+    background-image: url(../images/icons/icon-plane-8.png);
+}
+
+.icon-plane-9 {
+    width: 106px;
+    height: 639px;
+    background-image: url(../images/icons/icon-plane-9.png);
+}
+
+.bg-map {
+    width: 170px;
+    height: 214px;
+    background-image: url(../images/icons/bg-map.png);
+}
+
+.bg-map-2 {
+    width: 201px;
+    height: 239px;
+    background-image: url(../images/icons/bg-map-2.png);
+}
+
+.bg-map-3 {
+    width: 1080px;
+    height: 684px;
+    background-image: url(../images/icons/bg-map-3.png);
+}
+
+.bg-map-4 {
+    width: 987px;
+    height: 478px;
+    background-image: url(../images/icons/bg-map-4.png);
+}
+
+.icon-boxes {
+    width: 399px;
+    height: 182px;
+    background-image: url(../images/icons/icon-boxes.png);
+}
+
+.icon-lines {
+    width: 367px;
+    height: 474px;
+    background-image: url(../images/icons/icon-lines.png);
+}
+
+.icon-lines-2 {
+    width: 568px;
+    height: 700px;
+    background-image: url(../images/icons/icon-lines-2.png);
+}
+
+.icon-lines-3 {
+    width: 264px;
+    height: 273px;
+    background-image: url(../images/icons/icon-lines-3.png);
+}
+
+.icon-lines-4 {
+    width: 266px;
+    height: 209px;
+    background-image: url(../images/icons/icon-lines-4.png);
+}
+
+.icon-quote {
+    width: 137px;
+    height: 99px;
+    background-image: url(../images/icons/icon-quote.png);
+}
+
+.icon-quote-2 {
+    width: 137px;
+    height: 99px;
+    background-image: url(../images/icons/icon-quote-2.png);
+}
+
+.icon-quote-3 {
+    width: 137px;
+    height: 99px;
+    background-image: url(../images/icons/icon-quote-3.png);
+}
+
+.icon-text {
+    width: 146px;
+    height: 71px;
+    background-image: url(../images/icons/icon-text.png);
+}
+
+.icon-arrow {
+    width: 106px;
+    height: 64px;
+    background-image: url(../images/icons/icon-arrow.png);
+}
+
+.icon-blur {
+    width: 185px;
+    height: 214px;
+    background-image: url(../images/icons/icon-blur.png);
+}
+
+.shape-1 {
+    width: 1685px;
+    height: 994px;
+    background-image: url(../images/banner/shape-1.png);
+}
+
+.shape-3 {
+    width: 291px;
+    height: 89px;
+    background-image: url(../images/icons/shape-3.png);
+}
+
+
+.bounce-y{
+    animation: bounce-y 10s infinite linear;
+}
+
+.bounce-x{
+    animation: bounce-x 10s infinite linear;
+}
+
+.zoom-one{
+    animation: zoom-one 10s infinite linear;
+}
+
+.zoom-two{
+    animation: zoom-two 5s infinite linear;
+}
+
+@keyframes float{
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce-y {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce-x {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(30px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoom-one {
+    0% {
+        transform: scale(.95);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(.95);
+    }
+}
+
+@keyframes zoom-two {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(.95);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.overlay-anim {
+    position: relative;
+    &:after {
+        background: rgba(255, 255, 255, 0.3);
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 0;
+        opacity: 1;
+        z-index: 9;
+        pointer-events: none;
+    }
+    &:hover{
+        &:after {
+            height: 100%;
+            opacity: 0;
+            transition: all 400ms linear;
+        }
+    }   
+}
+
+
+// Animated Moving Circles
+
+.circle {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    left: -10px;
+    top: -10px;
+    border-radius: 100%;
+    z-index: 1;
+    pointer-events: none;
+    z-index: 10000;
+    transform: scale(1);
+    @supports (mix-blend-mode: difference) {
+        background-color: white;
+        mix-blend-mode: difference;
+    }
+    @include for-md{
+        display: none !important;
+    }
+}
+
+.circle-follow {
+    position: fixed;
+    mix-blend-mode: difference;
+    width: 30px;
+    height: 30px;
+    left: -21px;
+    top: -21px;
+    border-radius: 100%;
+    z-index: 1;
+    user-select: none;
+    pointer-events: none;
+    z-index: 10000;
+    transform: scale(1);
+    @supports (mix-blend-mode: difference) {
+        border: 1px solid #fff;
+        mix-blend-mode: difference;
+    }
+    @include for-md {
+        display: none !important;
+    }
+}

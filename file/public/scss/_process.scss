@@ -1,0 +1,335 @@
+/*** 
+
+====================================================================
+    Process Section
+====================================================================
+
+***/
+
+.process-section {
+    position: relative;
+    padding: 120px 0 120px;
+    .icon-plane-9 {
+        position: absolute;
+        top: 70px;
+        right: 90px;
+        @include media-breakpoint-down(lg){
+            display: none;
+        }
+    }
+    .bg-map-4 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.process-block {
+    margin-bottom: 50px;
+    &:last-child {
+        .inner-box {
+            &::before {
+                display: none;
+            }
+        }
+    }
+    .inner-box {
+        position: relative;
+        text-align: center;
+        &:before {
+            content: '............';
+            position: absolute;
+            top: 50px;
+            right: -80px;
+            font-size: 50px;
+            letter-spacing: .1em;
+            color: #efeae4;
+            @include media-breakpoint-down(lg){
+                display: none;
+            }
+        }
+        &:hover {
+            .icon {
+                color: var(--theme-color-light);
+                transform: rotate(360deg);
+                &:after {
+                    background-color: var(--theme-color1);
+                }
+            }
+            .count {
+                background-color: #d00005;
+                color: var(--theme-color-light);
+                &:before {
+                    opacity: 0;
+                }
+                &:after {
+                    opacity: 1;
+                }
+            }
+        }
+        .icon-blur {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .icon {
+            position: relative;
+            display: block;
+            width: 187px;
+            height: 186px;
+            @include flex-center;
+            font-size: 65px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            color: #d00005;
+            background-color: var(--theme-color-light);
+            border: 1px solid #eee9e3;
+            @include transition(all 300ms ease);
+            &:before {
+                position: relative;
+                z-index: 1;
+            }
+            &:after {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 149px;
+                height: 150px;
+                border-radius: 50%;
+                background-color: #f8f5f1;
+                transform: translate(-50%, -50%);
+                @include transition(all 300ms ease);
+                content: '';
+            }
+        }
+        .count {
+            position: absolute;
+            top: 0;
+            right: 100px;
+            width: 53px;
+            height: 53px;
+            line-height: 53px;
+            @include title-font;
+            font-weight: 700;
+            border-radius: 50%;
+            font-size: 20px;
+            color: var(--theme-color-light);
+            background-color: var(--theme-color1);
+            text-align: center;
+            @include transition(all 300ms ease);
+            z-index: 1;
+            @include media-breakpoint-down(xl){
+                right: 70px;
+            }
+            @include media-breakpoint-down(md){
+                right: 180px;
+            }
+            @include media-breakpoint-down(sm){
+                right: 60px;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 72px;
+                height: 76px;
+                background-image: url(../images/icons/icon-blur-2.png);
+                transform: translate(-50%, -50%);
+                @include transition(all 300ms ease);
+                z-index: -1;
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 72px;
+                height: 76px;
+                opacity: 0;
+                transform: scale(0);
+                background-image: url(../images/icons/icon-blur-3.png);
+                transform: translate(-50%, -50%);
+                @include transition(all 300ms ease);
+                z-index: -1;
+            }
+        }
+        .title {
+            position: relative;
+            color: #151515;
+            font-weight: 700;
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+/*** 
+
+====================================================================
+    Work Section
+====================================================================
+
+***/
+
+.work-section {
+  position: relative;
+  
+  .icon-container-4 {
+    background-image: url(../images/icons/icon-container-4.png);
+    width: 650px;
+    height: 419px;
+    left: -376px;
+    bottom: 70px;
+    z-index: -1;
+  }
+  .outer-box {
+    background-color: #ebf1f5;
+    background-image: url(../images/background/14.jpg);
+    @include background;
+    padding: 120px 0 50px;
+    @include media-breakpoint-down(sm){
+        padding: 70px 0 0;
+    }
+  }
+  .sec-title {
+    margin-bottom: 125px;
+    @include media-breakpoint-down(md){
+        margin-bottom: 70px;
+    }
+  }
+}
+
+.work-block {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin-bottom: 70px;
+  .inner-box {
+    position: relative;
+    &:before {
+      position: absolute;
+      left: calc(100% + 15px);
+      top: 36px;
+      height: 106px;
+      width: 170px;
+      margin-left: -85px;
+      background-image: url(../images/icons/shape-5.png);
+      content: "";
+      @include media-breakpoint-down(lg) {
+        display: none;
+      }
+    }
+    &:hover {
+      .icon-box {
+        .icon {
+          transform: scaleX(-1);
+        }
+      }
+    }
+  }
+  .icon-box {
+    position: relative;
+    height: 114px;
+    width: 114px;
+    @include flex-center;
+    transition: all 500ms ease;
+    border-radius: 50%;
+    margin: 0 auto 100px;
+    background-color: var(--theme-color-light);
+    &:after {
+      content: "";
+      position: absolute;
+      top: -8px;
+      right: -8px;
+      width: 65px;
+      height: 130px;
+      background-image: url(../images/icons/icon-border.png);
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: -44px;
+      left: 50%;
+      width: 1px;
+      height: 36px;
+      background-color: var(--theme-color1);
+    }
+    .count {
+      position: absolute;
+      bottom: -82px;
+      left: calc(50% - 19px);
+      height: 38px;
+      width: 38px;
+      font-size: 18px;
+      color: #fff;
+      background-color: var(--theme-color1);
+      border-radius: 50%;
+      font-weight: 700;
+      @include title-font;
+      @include flex-center;
+      transition: all 300ms ease;
+    }
+    .icon {
+      color: var(--theme-color2);
+      font-size: 52px;
+      padding-top: 7px;
+      transition: all 300ms ease;
+      ;
+    }
+  }
+  .title {
+    position: relative;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  .text {
+    max-width: 300px;
+    font-size: 14px;
+    line-height: 28px;
+    margin: 0 auto;
+  }
+  &.work-block-reverse {
+    margin-top: -13px;
+    .inner-box {
+      &:before {
+        top: 25px;
+        height: 110px;
+        width: 178px;
+        background-image: url(../images/icons/shape-6.png);
+      }
+      &:hover {
+        .icon-box {
+          .icon {
+            transform: scaleX(-1);
+          }
+        }
+      }
+      .icon-box {
+        margin-bottom: 0;
+        margin-top: 97px;
+        &:after {
+          top: -8px;
+          right: -8px;
+        }
+        &:before {
+          bottom: auto;
+          top: -44px;
+          left: 50%;
+        }
+        .count {
+          bottom: auto;
+          top: -82px;
+          left: calc(50% - 19px);
+        }
+      }
+    }
+  }
+}
+
+.work-block:last-child .inner-box:before {
+  display: none;
+}
