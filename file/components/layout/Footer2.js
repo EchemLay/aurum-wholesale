@@ -33,7 +33,7 @@ export default function Footer1() {
                 <ul className="contact-list-two">
                   <li><i className="fal fa-phone"></i> <Link href="tel:+8801750050088">+1-848-667-2155</Link></li>
                   <li><i className="fal fa-envelope"></i> <Link href="mailto:info@aurumwholesale.com">info@aurumwholesale.com</Link></li>
-                  <li><i className="fal fa-map-marker-alt"></i> 6901 K Ave Suite #101 <br/>Plano, TX 75074 </li>
+                  {/* <li><i className="fal fa-map-marker-alt"></i> 6901 K Ave Suite #101 <br/>Plano, TX 75074 </li> */}
                 </ul>
               </div>
             </div>

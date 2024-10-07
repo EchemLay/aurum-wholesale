@@ -78,7 +78,7 @@ const Contact = () => {
                   <a href="mailto:needhelp@company.com">info@aurumwholesale.com</a>
                 </div>
               </li>
-              <li>
+              {/* <li>
                 <div className="icon">
                   <span className="lnr-icon-location"></span>
                 </div>
@@ -87,7 +87,7 @@ const Contact = () => {
                   <span>6901 K Ave Suite #101,</span><br></br>
                   <span>Plano, TX 75074</span>
                 </div>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
